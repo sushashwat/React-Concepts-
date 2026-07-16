@@ -15,12 +15,12 @@ function Conditional (){
     );
 }
 
-// const isAdmin = true;
+// const isAdmin = true;    
 
 // function App() {
 //   return (
 //     <div>
-//       {isAdmin && <button>Delete User</button>}
+//       {isAdmin && <button>De lete User</button>}
 //     </div>
 //   );
 // }

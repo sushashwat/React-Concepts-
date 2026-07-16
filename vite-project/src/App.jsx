@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Conditional from "./components/Conditional";
+import TimerComponent from "./components/TimerComponent";
 function App(){
 
   const [count,setCount] = useState(0);
@@ -28,6 +29,7 @@ function App(){
         <li key={todo.id}>{todo.text}</li>
       ))}
     </ul>
+    <TimerComponent/>
     </>
   )
 }
