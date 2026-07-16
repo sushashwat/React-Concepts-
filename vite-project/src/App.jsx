@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Conditional from "./components/Conditional";
 function App(){
 
   const [count,setCount] = useState(0);
@@ -17,6 +17,9 @@ function App(){
     <>
     <h1>
       shashwat 
+    </h1>
+    <h1>
+      <Conditional/>
     </h1>
     <h2>{count}</h2>
     <button onClick={increase}> increase</button>
