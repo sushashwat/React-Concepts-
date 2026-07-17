@@ -5,6 +5,8 @@ import EventHandling from "./components/EventHandling";
 function App(){
 
   const [count,setCount] = useState(0);
+  const[text , setText] = useState("");
+  console.log("Rendering");
   const todos = [
     {id:1, text:"learn react"},
     {id:2, text:"revise react"},
@@ -15,8 +17,13 @@ function App(){
     setCount(count + 1);
   }
 
-  function handleClick(){
+  function handleClick(e){
     console.log(event);
+    console.log(e);
+  }
+  function handleChange(e){
+    console.log("Typing", e.target.value);
+    setText(e.target.value);
   }
 
   return(
@@ -34,9 +41,14 @@ function App(){
         <li key={todo.id}>{todo.text}</li>
       ))}
     </ul>
-    <TimerComponent/>
+    {/* <TimerComponent/> */}
     <EventHandling/>
     <button onClick={handleClick}> Push me </button>
+    <input 
+    type = "text"
+    onChange={handleChange}
+    />
+    <h1>{text}</h1>
     </>
   )
 }
