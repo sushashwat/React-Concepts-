@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Conditional from "./components/Conditional";
 import TimerComponent from "./components/TimerComponent";
+import EventHandling from "./components/EventHandling";
 function App(){
 
   const [count,setCount] = useState(0);
@@ -12,6 +13,10 @@ function App(){
 
   function increase (){
     setCount(count + 1);
+  }
+
+  function handleClick(){
+    console.log(event);
   }
 
   return(
@@ -30,6 +35,8 @@ function App(){
       ))}
     </ul>
     <TimerComponent/>
+    <EventHandling/>
+    <button onClick={handleClick}> Push me </button>
     </>
   )
 }
