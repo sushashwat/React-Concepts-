@@ -2,6 +2,7 @@ import { useState } from "react";
 import Conditional from "./components/Conditional";
 import TimerComponent from "./components/TimerComponent";
 import EventHandling from "./components/EventHandling";
+import Form from "./components/Form";
 function App(){
 
   const [count,setCount] = useState(0);
@@ -49,6 +50,7 @@ function App(){
     onChange={handleChange}
     />
     <h1>{text}</h1>
+    <Form/>
     </>
   )
 }
