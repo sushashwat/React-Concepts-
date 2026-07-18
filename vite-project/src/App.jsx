@@ -3,6 +3,7 @@ import Conditional from "./components/Conditional";
 import TimerComponent from "./components/TimerComponent";
 import EventHandling from "./components/EventHandling";
 import Form from "./components/Form";
+import Class from "./components/Class";
 function App(){
 
   const [count,setCount] = useState(0);
@@ -51,6 +52,7 @@ function App(){
     />
     <h1>{text}</h1>
     <Form/>
+    <Class/>
     </>
   )
 }
