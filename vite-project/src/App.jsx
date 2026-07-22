@@ -9,6 +9,7 @@ import SideEffect from "./components/SideEffect";
 import Memo from "./components/Memo";
 import UseMemo from "./components/Usememo";
 import UseCallback from "./components/UseCallback";
+import UseRef from "./components/UseRef";
 function App(){
 
   const [count,setCount] = useState(0);
@@ -63,6 +64,7 @@ function App(){
     <Memo/>
     <UseMemo/>
     <UseCallback/>
+    <UseRef />
     </>
   )
 }
